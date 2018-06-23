@@ -8,15 +8,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        {{ if and ( ne .Site.Title "" ) ( eq .Site.Params.BrandImage "" )}}
         <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL}}">
 	  tech ramblings
-          {{ .Site.Title }}
-          {{ end }}
-          {{ if ( ne .Site.Params.BrandImage "" ) }}
           <a class="navbar-brand-img" href="{{ .Site.BaseURL | relLangURL}}">
-            <img alt="{{ .Site.Params.brand }}" src="{{ .Site.Params.BrandImage }}">
-            {{ end }}
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
